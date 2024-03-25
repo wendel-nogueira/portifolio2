@@ -1,9 +1,10 @@
 import React from "react";
+import Page from "@/components/Page/page";
 
 export default function Projects() {
   return (
-    <div>
-      <p>Projects</p>
-    </div>
+    <Page title="projects" subtitle="It's on the work!">
+      <></>
+    </Page>
   );
 }

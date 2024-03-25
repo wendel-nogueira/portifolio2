@@ -9,10 +9,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full h-full min-h-screen bg-[url('/background.svg')] bg-no-repeat bg-cover flex flex-col items-center before:content-[''] before:absolute before:inset-0 before:bg-black before:-z-10">
-      <Header />
-      <Body>{children}</Body>
-      <Footer />
+    <div className="w-full h-full bg-black">
+      <div className="w-full h-full min-h-screen bg-[url('/background.svg')] bg-no-repeat bg-cover flex flex-col items-center">
+        <Header className="[&>*]:animate-fade-in-0.5" />
+        <Body className="[&>*]:animate-fade-in-1.5">{children}</Body>
+        <Footer className="[&>*]:animate-fade-in-0.5" />
+      </div>
     </div>
   );
 }

@@ -17,6 +17,24 @@ const config: Config = {
         sans: ["Montserrat", "sans-serif"],
         serif: ["Zilla Slab", "serif"],
       },
+      animation: {
+        "fade-in-0.5": "fadeIn 0.5s ease-in-out",
+        "fade-out-0.5": "fadeOut 0.5s ease-in-out",
+        "fade-in-1": "fadeIn 1s ease-in-out",
+        "fade-out-1": "fadeOut 1s ease-in-out",
+        "fade-in-1.5": "fadeIn 1.5s ease-in-out",
+        "fade-out-1.5": "fadeOut 1.5s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],
